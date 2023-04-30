@@ -1,0 +1,20 @@
+body{
+    font-family: 'Bruno Ace SC', cursive;
+    
+}
+
+.lista-jogos-esquerda{
+    background-color: #343a40;
+    color: #fff;
+}
+
+.navbar-inverse {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-group {
+  display: inline-flex;
+  margin: 0;
+}
+

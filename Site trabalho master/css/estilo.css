@@ -37,8 +37,18 @@ main{
     
 }
 
-body{
-   
-    
+.wt{
+    color: #fff;
     
 }
+
+.lista-jogos-esquerda{
+    background-color: #344A40;
+    color: #fff;
+}
+
+
+.fonte{
+    font-family: 'Bruno Ace SC', cursive;
+    
+    }
