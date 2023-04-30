@@ -18,3 +18,28 @@ body{
   margin: 0;
 }
 
+.pagination-container.dark-theme .page-item.disabled .page-link,
+.pagination-container.dark-theme .page-item.disabled .page-link:hover,
+.pagination-container.dark-theme .page-item.disabled .page-link:focus {
+  color: #999; /* cor do texto para itens desativados */
+  background-color: #222; /* cor de fundo para itens desativados */
+  border-color: #444; /* cor da borda para itens desativados */
+}
+
+.pagination-container.dark-theme .page-item .page-link,
+.pagination-container.dark-theme .page-item .page-link:hover,
+.pagination-container.dark-theme .page-item .page-link:focus {
+  color: #fff; /* cor do texto para itens ativos */
+  background-color: #444; /* cor de fundo para itens ativos */
+  border-color: #666; /* cor da borda para itens ativos */
+  box-shadow: none; /* remova a sombra para itens ativos */
+}
+
+.pagination-container.dark-theme .page-item.active .page-link {
+  z-index: 1; /* mover o item ativo para a frente */
+  color: #000; /* cor do texto para o item ativo */
+  background-color: #fff; /* cor de fundo para o item ativo */
+  border-color: #666; /* cor da borda para o item ativo */
+  box-shadow: none; /* remova a sombra para o item ativo */
+}
+
