@@ -52,3 +52,34 @@ main{
     font-family: 'Bruno Ace SC', cursive;
     
     }
+
+.pagination-dark .page-link {
+  color: #28a745;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+.pagination-dark .page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #39574C;
+  border-color: #28a745;
+}
+
+.pagination-dark .page-item.disabled .page-link {
+  color: #6c757d;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+footer{
+    background-color: #212528;
+    color: white;
+      
+}
+
+ .fot2{
+    height: 80px;
+    border: 1px solid #000;
+}
+
