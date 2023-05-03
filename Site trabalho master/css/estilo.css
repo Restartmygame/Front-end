@@ -75,11 +75,15 @@ main{
 footer{
     background-color: #212528;
     color: white;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 50px 0;
       
 }
 
- .fot2{
-    height: 80px;
-    border: 1px solid #000;
+.hr2{
+    background-color: #BEBEBE;
+    
 }
 

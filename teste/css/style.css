@@ -43,3 +43,35 @@ body{
   box-shadow: none; /* remova a sombra para o item ativo */
 }
 
+/* Estilos para o rodapé */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40;
+  color: white;
+  padding: 50px 0;
+}
+
+footer a {
+  color: #f8f9fa;
+}
+
+/* Estilos para o texto de direitos autorais */
+footer p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Estilos para o fundo do rodapé */
+footer .bg-dark {
+  background-color: #343a40 !important;
+}
+
+/* Estilos para os links do rodapé */
+footer .text-white a:hover {
+  color: #f8f9fa;
+}
+
+
