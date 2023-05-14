@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Exercício 1</title>
+  </head>
+  <body>
+    <h4>Crie duas caixas de texto em HTML. Crie código em Javascript que mostra a mensagem “primeira caixa ativada” <br>
+    quando clica no primeiro input text. Crie código em Javascript que mostra uma mensagem “perdeu o foco” quando clica <br>
+    em outro local sem ser a primeira caixa de texto.</h4>
+
+    <input type="text" id="primeira-caixa" placeholder="Digite aqui...">
+    <br>
+    <input type="text" id="segunda-caixa" placeholder="Digite aqui...">
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    
+      <script src="js/jquery-3.3.1.slim.min.js"></script>
+    
+      <script src="js/popper.min.js" ></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+
+   <script>
+    window.onload = function() {
+      var primeiraCaixa = document.getElementById('primeira-caixa');
+      var segundaCaixa = document.getElementById('segunda-caixa');
+
+      var primeiraCaixaAtivada = false; // Variável de controle
+      var perdeuFoco = false; // Variável de controle
+
+      primeiraCaixa.addEventListener('focus', function() {
+        if (!primeiraCaixaAtivada) {
+          alert('Primeira caixa ativada');
+          primeiraCaixaAtivada = true;
+          perdeuFoco = false; // Reseta a variável de controle de perda de foco
+        }
+      });
+
+      segundaCaixa.addEventListener('focus', function() {
+        if (!perdeuFoco && !primeiraCaixaAtivada) {
+          alert('Perdeu o foco');
+          perdeuFoco = true;
+        }
+      });
+
+      segundaCaixa.addEventListener('blur', function() {
+        if (!primeiraCaixaAtivada) {
+          alert('Perdeu o foco');
+        }
+      });
+    };
+  </script>
+
+
+  </body>
+</html>
