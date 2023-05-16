@@ -15,9 +15,8 @@
     quando clica no primeiro input text. Crie código em Javascript que mostra uma mensagem “perdeu o foco” quando clica <br>
     em outro local sem ser a primeira caixa de texto.</h4>
 
-    <input type="text" id="primeira-caixa" placeholder="Digite aqui...">
-    <br>
-    <input type="text" id="segunda-caixa" placeholder="Digite aqui...">
+    <input type="text" onfocus="primeiraCaixaAtivada()" />
+    <input type="text" onblur="perdeuFoco()" />
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
@@ -28,36 +27,15 @@
     
     <script src="js/bootstrap.min.js"></script>
 
-   <script>
-    window.onload = function() {
-      var primeiraCaixa = document.getElementById('primeira-caixa');
-      var segundaCaixa = document.getElementById('segunda-caixa');
-
-      var primeiraCaixaAtivada = false; // Variável de controle
-      var perdeuFoco = false; // Variável de controle
-
-      primeiraCaixa.addEventListener('focus', function() {
-        if (!primeiraCaixaAtivada) {
-          alert('Primeira caixa ativada');
-          primeiraCaixaAtivada = true;
-          perdeuFoco = false; // Reseta a variável de controle de perda de foco
+      <script>
+        function primeiraCaixaAtivada() {
+            alert("Primeira caixa ativada!");
         }
-      });
 
-      segundaCaixa.addEventListener('focus', function() {
-        if (!perdeuFoco && !primeiraCaixaAtivada) {
-          alert('Perdeu o foco');
-          perdeuFoco = true;
+        function perdeuFoco() {
+            alert("Perdeu o foco");
         }
-      });
-
-      segundaCaixa.addEventListener('blur', function() {
-        if (!primeiraCaixaAtivada) {
-          alert('Perdeu o foco');
-        }
-      });
-    };
-  </script>
+    </script>
 
 
   </body>
