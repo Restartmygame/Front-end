@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Olá, mundo!</title>
+  </head>
+  <body>
+    <h3> Crie uma caixa de texto em html . Crie um botão em html que chama uma função em Javascript que dependendo do valor introduzido mostra uma mensagem diferente em um Span.</h3>
+      
+     <input type="text" id="texto" />
+    <button onclick="exibirMensagem()">Exibir Mensagem</button>
+    <br>
+    <span id="mensagem"></span>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    
+      <script src="js/jquery-3.3.1.slim.min.js"></script>
+    
+      <script src="js/popper.min.js" ></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+      
+     <script>
+        function exibirMensagem() {
+            var valor = document.getElementById("texto").value;
+            var mensagemSpan = document.getElementById("mensagem");
+
+            if (valor >= 0 && valor <= 10) {
+                mensagemSpan.textContent = "Insuficiente";
+            } else if (valor > 10 && valor <= 14) {
+                mensagemSpan.textContent = "Bom";
+            } else if (valor > 14) {
+                mensagemSpan.textContent = "Muito Bom";
+            } else {
+                mensagemSpan.textContent = "Valor inválido";
+            }
+        }
+    </script>
+  </body>
+</html>

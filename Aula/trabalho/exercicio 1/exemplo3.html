@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Exercício 1</title>
+  </head>
+  <body>
+    <h4>Crie duas caixas de texto em HTML. Crie código em Javascript que mostra a mensagem “primeira caixa ativada” <br>
+    quando clica no primeiro input text. Crie código em Javascript que mostra uma mensagem “perdeu o foco” quando clica <br>
+    em outro local sem ser a primeira caixa de texto.</h4>
+
+    <input type="text" onfocus="primeiraCaixaAtivada()" />
+    <input type="text" onblur="perdeuFoco()" />
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    
+      <script src="js/jquery-3.3.1.slim.min.js"></script>
+    
+      <script src="js/popper.min.js" ></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+
+      <script>
+        function primeiraCaixaAtivada() {
+            alert("Primeira caixa ativada!");
+        }
+
+        function perdeuFoco() {
+            alert("Perdeu o foco");
+        }
+    </script>
+
+
+  </body>
+</html>
