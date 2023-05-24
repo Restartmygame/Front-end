@@ -11,7 +11,20 @@
     <title>Olá, mundo!</title>
   </head>
   <body>
-    <h1>Olá, mundo!</h1>
+    <h3>Desenvolva um script para validar a aprovação ou reprovação de um aluno em uma disciplina.<br> Para isso, crie uma página onde o usuário deve informar a nota 1 e a nota 2. Ao clicar em um botão, estes dados deverão<br> ser processados. Este script deverá calcular a somatória das duas notas (nota_final) e verificar:<br>
+Se nota_total  3,0 Então exibir mensagem de reprovado para o usuário<br>
+Se nota_total =7,0 Então exibir mensagem de aprovado para o aluno<br>
+Se nota_final =3,0 e  7,0 Então exibir mensagem de exame para o aluno.</h3>
+      
+      <h1>Validação de Notas</h1>
+
+  <label for="nota1">Nota 1:</label>
+  <input type="number" id="nota1" min="0" max="10" step="0.1">
+  <br>
+  <label for="nota2">Nota 2:</label>
+  <input type="number" id="nota2" min="0" max="10" step="0.1">
+  <br>
+  <button onclick="validarNotas()">Calcular</button>
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
@@ -21,5 +34,21 @@
       <script src="js/popper.min.js" ></script>
     
     <script src="js/bootstrap.min.js"></script>
+      
+       <script>
+    function validarNotas() {
+      var nota1 = parseFloat(document.getElementById('nota1').value);
+      var nota2 = parseFloat(document.getElementById('nota2').value);
+      var media = (nota1 + nota2) / 2;
+
+      if (media < 3.0) {
+        alert("Reprovado");
+      } else if (media >= 7.0) {
+        alert("Aprovado");
+      } else {
+        alert("Exame");
+      }
+    }
+  </script>
   </body>
 </html>
