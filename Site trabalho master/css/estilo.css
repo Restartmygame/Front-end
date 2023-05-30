@@ -13,7 +13,7 @@
                 border: 1px solid #CCC;
                 float: left;
                 margin-left: 5%;
-            }
+}
 
 .div1{
     background-color: #39574C;
@@ -72,7 +72,7 @@ main{
   border-color: #343a40;
 }
 
-footer{
+.footer{
     background-color: #212528;
     color: white;
     left: 0;
@@ -85,5 +85,13 @@ footer{
 .hr2{
     background-color: #BEBEBE;
     
+}
+
+.divjogo{
+    color: white;
+    float: left;
+    background-color: #343A40;
+
+
 }
 
