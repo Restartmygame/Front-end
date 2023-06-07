@@ -89,8 +89,14 @@ main{
 
 .divjogo{
     color: white;
-    float: left;
+    float: center;
     background-color: #343A40;
+
+
+}
+
+.floatR{
+    float: right;
 
 
 }
