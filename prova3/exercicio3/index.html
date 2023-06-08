@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Olá, mundo!</title>
+  </head>
+  <body>
+    <h1>Faça um programa em JavaScript que o usuário informe um peso e selecione um Planeta em um select 
+      (dropDownList). O programa deverá calcular qual será o peso informado no planeta, de acordo com a tabela e fórmula abaixo:</h1>
+
+      
+
+
+      <div class="container">
+        <div class="form-group">
+          <label>Informe o peso</label>
+          <input type="number" class="form-control" id="txtpeso"/>
+        </div>
+        <div class="form-control">
+          <label for="selectplaneta">Escolha um planeta</label>
+          <select class="form-control" id="txtplaneta">
+            <option>Mercúrio</option>
+            <option>Vênus</option>
+            <option>Marte</option>
+            <option>Jupiter</option>
+            <option>Saturno</option>
+            <option>Urano</option>
+            </select>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="form-group">
+              <input type="button" class="form-control btn btn-success" value="calcular" id="btncalcular"
+              onclick="calcular()"/>
+          </div>
+
+          <div class="form-group">
+              <h2>
+               Seu peso no planeta 
+                <span id="veredito"></span>
+              </h2>
+            </div> 
+
+        </div>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    
+      <script src="js/jquery-3.3.1.slim.min.js"></script>
+    
+      <script src="js/popper.min.js" ></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+    
+      function calcular(){
+
+        var peso, planeta;
+
+        peso = document.getElementById("txtpeso").value;
+        planeta = document.getElementById("txtplaneta").value;
+
+        if(planeta == "Mercúrio"){
+          peso_relativo = 0.37
+        }
+        else{
+          if(planeta == "Vênus"){
+            peso_relativo = 0.88
+          }
+          else{
+            if(planeta == "Marte"){
+              peso_relativo = 0.38
+            }
+            else{
+              if(planeta == "Jupiter"){
+                peso_relativo = 2.64
+              }
+              else{
+                if(planeta == "Saturno"){
+                  peso_relativo = 1.15
+                }
+                else{
+                  if(planeta == "Urano"){
+                    peso_relativo = 1.17
+                  }
+                }
+              }
+            }
+          }
+        }
+        
+        
+        
+        peso_no_planeta = (peso / 10) * peso_relativo
+
+        document.getElementById("veredito").textContent= peso_no_planeta;
+
+
+      }
+    
+    
+    
+    
+    </script>
+  </body>
+</html>

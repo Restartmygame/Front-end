@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Olá, mundo!</title>
+  </head>
+  <body>
+    <h1>A prefeitura da nossa cidade abriu uma linha de crédito para seus funcionários.<br> 
+      Sabe-se que o valor máximo da prestação não pode ultrapassar 30% do salário bruto.<br> 
+      Desenvolva um programa em JavaScript, que o usuário informe o salário bruto do funcionário e o valor da prestação,<br>
+      e o programa informe se o empréstimo poderá ou não ser concedido.</h1>
+
+      <div class="container">
+        <div class="form-group">
+          <label>Informe seu salário bruto</label>
+          <input type="number" class="form-control" id="txtsalbruto"/>
+        </div>
+       
+        <div class="form-group">
+          <label>informe a prestação</label>
+          <input type="number" class="form-control" id="txtprestacao"/>
+        </div>
+       
+        <div class="form-group">
+            <input type="button" class="form-control btn btn-success" value="calcular" id="btncalcular"
+            onclick="calcular()"/>
+        </div>
+
+        <div class="form-control">
+            <span id="txtveredito"></span>
+        </div>
+
+      </div>
+
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    
+      <script src="js/jquery-3.3.1.slim.min.js"></script>
+    
+      <script src="js/popper.min.js" ></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+    
+      function calcular(){
+
+        var  sal_bruto, prestacao;
+
+        sal_bruto = document.getElementById("txtsalbruto").value;
+        prestacao = document.getElementById("txtprestacao").value;
+
+        porcen30 = (30 / 100) * sal_bruto
+
+        if(prestacao > porcen30){
+          document.getElementById("txtveredito").textContent= "Empréstimo negado!!";
+        }
+        else{
+          document.getElementById("txtveredito").textContent= "Empréstimo concedido!!";
+         
+        }
+
+      }
+    
+    
+    
+    
+    </script>
+  </body>
+</html>

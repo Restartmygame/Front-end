@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Exercicio 1</title>
+  </head>
+  <body>
+    <h2>1)	Desenvolva uma página com HTML, Boostrap e JavaScript para calcular o consumo de combustível de um automóvel em uma determinada viagem.<br>
+      A página deverá solicitar ao usuário:<br>
+      •	Quantos quilômetros possui a viagem.<br>
+      •	Quantos quilômetros o carro faz com um litro.<br>
+      •	O preço do litro do combustível.<br>
+      O programa deverá calcular e exibir:<br>
+      •	Quantos litros de combustível serão gastos com a viagem.<br>
+      •	Quanto de dinheiro será gasto com combustível na viagem.<br>
+      <br>
+      </h1>
+
+      <div class="container">
+        <div class="form-group">
+          <label>Quilômetros da viagem: </label>
+          <input type="number" class="form-control" id="txtkm"/>
+        </div>
+
+        <div class="form-group">
+          <label>quantos quilômetros seu carro faz por litro</label>
+          <input type="number" class="form-control" id="txtkmporlitro"/>
+        </div>
+
+        <div class="form-group">
+            <label>preço do litro do combustível</label>
+            <input type="number" class="form-control" id="txtprecolitro"/>
+          </div>
+
+          <div class="form-group">
+              <input type="button" class="form-control btn btn-success" value="calcular" id="btncalcular"
+              onclick="calcular()"/>
+            </div>
+
+            <div class="form-group">
+              <h2>
+               quantidade de litros gastos na viagem: 
+                <span id="txtlitrototal"></span>
+              </h2>
+            </div> 
+            <div class="form-group">
+                <h2>
+                 quantidade de dinheiro gasto com combustível: 
+                  <span id="txtdinheirototal"></span>
+                </h2>
+              </div> 
+      </div>
+
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    
+      <script src="js/jquery-3.3.1.slim.min.js"></script>
+    
+      <script src="js/popper.min.js" ></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+
+      <script>
+      
+        function calcular(){
+
+          var km_viagem, km_litro, precolitro, litro1km, quant_litro_total, quant_dinheiro_total;
+
+          km_viagem = document.getElementById("txtkm").value;
+          km_litro = document.getElementById("txtkmporlitro").value;
+          precolitro = document.getElementById("txtprecolitro").value;
+
+          litro1km = 1 / km_litro;
+          quant_litro_total = litro1km * km_viagem;
+
+          quant_dinheiro_total = quant_litro_total * precolitro;
+
+
+          
+
+
+          document.getElementById("txtlitrototal").textContent= quant_litro_total; //define um texto para algum span
+          document.getElementById("txtdinheirototal").textContent= "R$" + quant_dinheiro_total; //define um texto para algum span
+
+
+        }
+      
+      
+      
+      </script>
+
+
+
+  </body>
+</html>

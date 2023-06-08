@@ -1,0 +1,48 @@
+Descreva 
+
+1- o que é Interface Humano Computador
+
+R= interface é o menu que é mostrado para o usuário que mostra todas as informações e opções que o usuário tem. É nela em que o usuário consegue ter 
+uma interação com o computador, assim que interagindo com os botões e itens da interface, são enviados informações da ação do usuário para o computador,
+e com essas indormações ele interpreta o que o usuário deseja, assim devolvendo para o usuário as informações interpretadas da sua ação 
+
+2- o que é usabilidade. 
+
+R= usabilidade significa a facilidade que o usuário tem ao interagir com o programa, site, interface, etc. Ou seja, é o que vai definir se o programa que o 
+usuário está utilizando será facilmente manipulado, será eficáz, fácil de memorizar, e mais importante, satisfazer a experiência do usuário
+
+3- Descreva os 10 princípios de usabilidade descritos por Jackob Nielsen.
+os 10 princípios de usabilidade descritos por Jackob nielsen são:
+
+1- Diálogos simples e naturais.
+	esse princípio evita erros de interpretação do usuário em relação a função da ação.
+
+2- Falar a linguagem do usuário.
+	esse princípio faz com que qualquer pessoa consiga entender o propósito do programa.
+
+3- Minimizar a sobrecarga de memória do usuário.
+	esse principio evita que o usuário não se canse e desista de investir no programa apenas ao usá-lo.
+
+4- Consistência.
+	esse princípio evita confusões e deixa tudo mais organizado para a melhor compreensão do usuário.
+
+5- Feedback.
+	esse princípio enfatiza a importância da avaliação dos usuáriops em relação ao site, programa, interface, etc. Porque com essas avaliações é possível
+	o crescimento da otimização em pró da melhora da experiência do usuário.
+
+6- Saídas claramente marcadas.
+	esse princípio é super improtante porque mostra ao usuário todas as etapas de um processo com clareza para que le não se perca no caminho da ação.
+
+7-Atalhos
+	esse princípo é importante porque ajuda o usuário a navegar mais facilmente pelo site, programa, interface, etc. Assim aumentando a eficiência dos processos do
+	usuário.
+
+8-Boas mensagens de erro
+	esse principio é importante porque em caso de erros na interface, com uma mensagem bem interpretada o usuário é capaz de resolver o problema facilmente.
+
+9- Prevenir erros
+	esse principio é fundamental, porque um programa com poucos erros é o programa que será mais procurado pelos usuários como sendo superior.
+
+10-Ajuda e documentação
+	esse principio é muito importante pois evita que erros cometidos por usuário sejam evitados e que quaisquer problemas encontrados pelo usuário podem ser 
+	consultados através da soluções pré pensadas que estarão disponíveis na documentação
